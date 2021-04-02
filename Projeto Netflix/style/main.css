@@ -1,0 +1,150 @@
+:root{ /*declara as variaveis, para utilizar*/
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*body*/
+/*elementos base*/
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+
+/*header*/
+header .container{
+    display: flex;/*o dislpay flex, serve para colocar na mesma linha os elementos, que está contido no container*/
+    flex-direction: row; /*coloca em padrão em linha*/
+    align-items: center; /*ele alinha os elementos de uma maneira vertical, nesse caso no centro*/
+    justify-content: space-between;/*cria um espaço entre as tags que tem no container*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 35px;
+}
+
+header nav a{
+    text-decoration: none;/*ele tira a linha que vem na tag nav*/
+    color: #aaa;
+    margin-right: 17px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*main*/
+/*serie principal*/
+.serie-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/Projeto\ Netflix/img/capa-hawai-five-0.jpg'); /*o linear gradiante, serve para que o texto que tá em cima, tenha um contraste, fazendo com que a imagem de fundo, fique mais escura, tem que colocar os 2 rgba */
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 400px; /*tamanho da caixa*/
+    background-size: cover; /*ela especifica o tammanho usado no background*/
+
+    display: flex;
+    flex-direction: column;/*estou jogando ele em coluna, não em linha*/
+    justify-content: center; /*centralizar os elementos*/
+    align-items: flex-start; /*começar sempre na esquerda*/
+}
+
+.serie-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*pra saber que ali é um botão*/
+    transition: .3s ease all;/*cuida da parte da animação*/
+}
+
+.botao:hover{ /* é quando passa o mouse em cima, muda a cor*/
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 9px;
+}
+
+.container{
+    margin-left: 20px;
+}
+.serie-principal .container{
+    margin-left: 45px;
+    width: 53%;/*para nao chegar até o final da tela*/
+}
+
+
+.box-serie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-series{
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.titulo-serie{
+    font-size: 35px;
+    padding-top: 5px;
+    text-align: center;
+    color: #aaa;
+
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.titulo-filmes{
+    font-size: 35px;
+    padding-top: 5px;
+    text-align: center;
+    color: #aaa;
+
+}
+
+.carrosel-documentarios{
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.titulo-documentarios{
+    font-size: 35px;
+    padding-top: 5px;
+    text-align: center;
+    color: #aaa;
+}
